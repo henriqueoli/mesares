@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
 <title>Mesares - Reservar mesas em bares e restaurantes pelo WhatsApp nunca foi tão fácil e rápido</title>
-<meta name="author" content="tansh">
-<meta name="description" content="HTML Landing Page Teamplate">
-<meta name="keywords" content="digital marketing, leads, pay per click, advertising, social media, SEO, email marketing">
+
+
+<meta name="description" content="Facilite a reserva de mesas no seu restaurante via WhatsApp. Oferecemos um serviço rápido e prático para seus clientes.">
+<meta name="keywords" content="reserva de mesa, restaurante, WhatsApp, reservas online, mesa de restaurante">
 
 <!-- FAVICON FILES -->
 <link href="assets/images/icons/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
@@ -22,7 +23,18 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 <link rel="stylesheet" href="assets/css/color.css">
+
+
+<!-- zerar campo -->
+<script>
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }</script>
+
 </head>
+
 <body>
 <div id="dtr-wrapper" class="clearfix">
 
@@ -388,7 +400,7 @@
                                     <h3 class="color-white">Fale com a gente</h3>
 
                                     <!-- form starts -->
-                                    <form id="contactform" method="post" action="https://formspree.io/f/mayrnqbn">
+                                    <form id="contactform" method="POST" action="https://formspree.io/f/mayrnqbn">
                                         <fieldset>
                                             <p class="dtr-form-field">
                                                 <input name="name"  type="text" placeholder="Nome">
@@ -406,13 +418,12 @@
                                                 <input name="url" />
                                             </p>
                                             <p>
-                                                <button class="dtr-btn dtr-btn-rounded btn-white" type="submit">Solicite um retorno</button>
+                                                <button class="dtr-btn dtr-btn-rounded btn-white" type="submit" >Solicite um retorno</button>
                                             </p>
                                             <div id="contactresult"></div>
                                         </fieldset>
                                     </form>
                                     <!-- form ends -->
-
                                 
                                 </div>
                                 <!-- box ends -->
